@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    
+    
+}
+
+.card{
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+   
+    
+}
+
+.card .hero{
+    width: 100%;
+    border-radius: 20px;
+    padding-bottom: 15px;
+
+}
+
+
+.card h1, p{
+    text-align: center;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.card h1{
+    font-size: 20px;
+}
+
+.card p{
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+    
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    
+    
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.price-info{
+    
+    padding: 10px;
+}
+
+.price img{
+    height: 40px;
+}
+
+.price-info .anual{
+    font-weight: bold;
+    display: block;
+    
+}
+
+.price a{
+    margin-left: 20px;
+    padding-left: 18px;
+    font-weight: bold;
+}
+
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.proceed button{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: red;
+    padding: 10px;
+    margin: 11px;
+    cursor: pointer;
+    width: 240px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+}
+
+.cancel a{
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+}
+
+@media (max-width: 330px){
+    .card{
+        width: 90%;
+        height: 80%;
+    }
+
+    .price{
+        background-color: white;
+    }
+
+    .proceed button{
+        width: 200px;
+    }
+
+   
+}
+
